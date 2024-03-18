@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Checkout Source') {
       steps {
-        git 'https://https://github.com/nehalg123/swe645hw2'
+        git 'https://github.com/nehalg123/swe645hw2'
       }
     }
     stage('Build image') {
