@@ -1,0 +1,14 @@
+header{
+    background-color: #006633;
+    color:#FFCC33
+}
+.survey-form{
+     width: 450px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+    background-color: rgba(255,255,255,0.5);
+}

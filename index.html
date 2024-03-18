@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Page</title>
+        <link rel="StyleSheet" href="./surveystyle.css">
+    </head>
+    <body>
+        <header>
+            <h1 align="center">Please fill the experience form</h1>
+        </header>
+        <div class="survey-form">
+            <form><!--Form that takes all the details from the user as described in the HW-1 Document-->
+                <p><label>First Name: <input type="text" required><span style="color: red;">*</span></label></p>
+                <p><label>Last Name: <input type="text" required><span style="color: red;">*</span></label></p>
+                <p><label>Street Address: <input type="text" required><span style="color: red;">*</span></label></p>
+                <p><label>City: <input type="text" required><span style="color: red;">*</span></label></p>
+                <p><label>State: <input type="text" required><span style="color: red;">*</span></label></p>
+                <p><label>Zip: <input type="number" required><span style="color: red;">*</span></label></form></p>
+                <p><label>Telephone Number: <input type="tel"required><span style="color: red;">*</span></label></p>
+                <p><label>Email: <input type="email" required></label><span style="color: red;">*</span></p>
+                <p><label>Date Of Survey: <input type="date" required><span style="color: red;">*</span></label></p>
+                <fieldset>
+                <legend>What did you like about your visit:</legend>    
+                    <input type="checkbox" id="students">
+                    <label for="students">Students</label>
+                    <input type="checkbox" id="location">
+                    <label for="location">Location</label>
+                    <input type="checkbox" id="campus">
+                    <label for="campus">Campus</label>
+                    <input type="checkbox" id="atmosphere">
+                    <label for="atmosphere">Atmosphere</label>
+                    <input type="checkbox" id="dorm">
+                    <label for="dorm">Dorm Rooms</label>
+                    <input type="checkbox" id="sports">
+                    <label for="sports">Sports</label>
+                </fieldset>
+                    <fieldset> <!--Name is same to make sure only one radio button can be selected.-->
+                    <legend>How did you get to know about the university: </legend>
+                    <input type="radio" id="Friends" name="rad">
+                    <label for="Friends">Friends</label>
+                    <input type="radio" id="tv" name="rad">
+                    <label for="tv">Television</label>
+                    <input type="radio" id="internet" name="rad">
+                    <label for="internet">Internet</label>
+                    <input type="radio" id="other" name="rad">
+                    <label for="other">Other</label></p>
+                </fieldset>
+                <p>
+                    <label for="suggest">How likely would you suggest this school to others?</label>
+                    <select name="suggest" id="suggest">
+                        <option value="Very Likely">Very Likely</option>
+                        <option value="Likely">Likely</option>
+                        <option value="Unlikely">Unlikely</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Raffle :<input type="text" placeholder="1,2,3...,100" min="1" max="100"></label><br> This will be used to announce free movie ticket winners.
+                </p>
+                <p>
+                    <label for="cmts">Additional comments:</label>
+                    <input type="text" id="cmts">
+                </p>
+                <button>Submit</button><button>Cancel</button>
+            </form>
+        </div>
+    </body>
+</html>
