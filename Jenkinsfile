@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/nehalg123/swe645hw2'
+        git branch: 'main', credentialsId: 'github', url: 'https://github.com/nehalg123/swe645hw2.git'
       }
     }
     stage('Build image') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Pushing Image') {
       environment {
-          registryCredential = 'dockerhub-credentials'
+          registryCredential = 'dockerhub'
            }
       steps{
         script {
