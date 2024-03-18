@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 script {
-                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/nehalg123/645hw2.git'
+                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/nehalg123/swe645hw2.git'
                 }
             }
         }
