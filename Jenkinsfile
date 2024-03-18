@@ -67,9 +67,9 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 script {
-                    sh "sed -i 's|image: .*|image: ${DOCKER_UNAME}/survey-app:${BUILD_TIMESTAMP}|' kubernetes/deployment.yaml"
-                    sh "sed -i 's|namespace: .*|namespace: ${KUBE_NAMESPACE}|' kubernetes/deployment.yaml"
-                    sh "kubectl apply -f kubernetes/deployment.yaml"
+                    sh "sed -i 's|image: .*|image: ${DOCKER_UNAME}/survey-app:${BUILD_TIMESTAMP}|' deployment.yaml"
+                    sh "sed -i 's|namespace: .*|namespace: ${KUBE_NAMESPACE}|' deployment.yaml"
+                    sh "kubectl apply -f deployment.yaml"
                 }
             }
         }
